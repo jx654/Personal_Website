@@ -1,0 +1,205 @@
+<html>
+	<head>
+  		<title>Jirou Xu's Personal Website </title>
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+		<script type="text/javascript" src="my_web.js"></script>  
+		<link href="style_jirou.css" type="text/css" rel="stylesheet">
+		<link rel="icon" href="icon.png">
+	</head>
+	<body>
+		<!-- header -->
+		<div class="header">
+    		<img src="Jirou_name.png" width="400px">
+
+    		<!-- Menu-bar -->
+            <div class="menu">
+                <ul>
+                    <li><a class="menu-list" id="homeMenu" href="#">HOME</a></li>
+                    <li><a class="menu-list" id="experienceMenu" href="#">EXPERIENCE</a></li>
+                    <li><a class="menu-list" id="skillsMenu" href="#">SKILLS</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">PROJECTS</button>
+                        <div class="dropdown-content">
+                            <a class="menu-list" id="project0Menu" href="#">Gentrification Detection</a>
+                            <a class="menu-list" id="project1Menu" href="#">Story Comprehension Tests</a>
+                            <a class="menu-list" id="project2Menu" href="#">Automated Q&amp;A System</a>
+                        </div>
+                    </div></li>
+                </ul>
+            </div>
+  		</div>
+
+  		<!-- Content for about page -->
+  		<div class="content" id="home"> 
+  			<div class="objective">
+  				<h2>Here's my <a href="JirouXu_Resume.pdf">resume</a>.</h2>	
+  			</div>
+
+  			<div class="container">
+  				<!-- Full-width images -->
+  				<div class="mySlides">
+      				<img src="my_background.png" style="width:80%; margin: 0 auto">
+  				</div>
+  				<div class="mySlides">
+      				<img src="my_projects.png" style="width:80%; margin: 0 auto">
+  				</div>
+  				<div class="mySlides">
+      				<img src="my_skill.png" style="width:80%; margin: 0 auto">
+  				</div>
+  				<div class="mySlides">
+      				<img src="my_projects.png" style="width:80%; margin: 0 auto">
+  				</div>
+
+  				<!-- Next and previous buttons -->
+  				<a class="prev">&#10094;</a>
+  				<a class="next">&#10095;</a>
+
+  				<!-- Image text -->
+  				<div class="caption-container">
+    				<p id="caption"></p>
+  				</div>
+
+  				<!-- Thumbnail images -->
+  				<div class="row">
+    				<div class="column">
+      					<img class="demo cursor" id="demo0" src="my_background.png" style="width:100%" alt="My Background">
+    				</div>
+    				<div class="column"> 
+      					<img class="demo cursor" id="demo1" src="my_projects.png" style="width:100%" alt="My Knowledge">
+    				</div>
+    				<div class="column">
+      					<img class="demo cursor" id="demo2" src="my_skill.png" style="width:100%" alt="My Skillset">
+    				</div>
+    				<div class="column"> 
+      					<img class="demo cursor" id="demo3" src="my_projects.png" style="width:100%" alt="My Interests">
+    				</div>
+  				</div>
+			</div>
+		</div>
+
+		<!-- Content for experience page -->
+		<div class="content" id="experience">
+            <div class="objective">
+                <h2>My past experience.</h2>
+            </div>
+
+            <!-- List of education and working experience -->
+            <div class="container">
+                <fieldset style="background-color: #e8edf3">
+                    <legend>Undergraduate Education</legend>
+                    <p>&nbsp; &nbsp; I got my undergraduate degree from Zhejiang University, where I studied applied mathematics. I learned linear algebra, optimization and operation research in my four-year study.</p>
+                </fieldset>
+                <fieldset style="background-color: #e9ece5">
+                    <legend>Graduate Education</legend>
+                    <p>&nbsp; &nbsp; I obtain my Master’s degree from New York University with major in Data Science. The core courses in two-year training covers basic statistics methods, machine learning, database knowledge, distributed systems, data structures and algorithms.</p>
+                </fieldset>
+                <fieldset style="background-color: #eee8f4">
+                    <legend>Working Experience</legend>
+                    <p>&nbsp; &nbsp; I used to work as a grader at New York University. Now I’m a data scientist in a startup. My current projects focus on healthcare related topics. My daily work including building scalable pipelines for data preprocessing, prediction modeling and cooperating with software developer to implement product feature.</p>
+                </fieldset>
+            </div>
+        </div>
+
+        <!-- Content for skills page -->
+        <div class="content" id="skills">
+  			<div class="objective">
+  				<h2>I use these skills to solve data science problems.</h2>
+  			</div>	
+
+  			<div class="container">
+  				<div class="skill cursor" id="python">Python</div>
+  				<div class="skillDetail" id="pythonDetail">I use python most for data science projects. Generally, I handled data wrangling by using pandas in python along with other libraries to deal with specific format data type. Then I built models based on <strong>scikit-learn</strong> packages or wrote functions by myself. For some topics, like natural language processing or image processing, <strong>PyTorch</strong> and <strong>TensorFlow</strong> will be my choices. Besides, I’m proficient with data structures and OOP in python, which enables me to improve my code efficiency. </div>
+  				<div class="skill cursor" id="sql">MySQL</div>
+  				<div class="skillDetail" id="sqlDetail">I’m familiar with both DDL and DML commands, as well as other useful operations, like  aggregate functions and window functions.</div>
+  				<div class="skill cursor" id="js">Javascript</div>
+  				<div class="skillDetail" id="jsDetail">Apart from data visualization libraries in python, sometimes I designed interactive websites with HTML, CSS, JavaScript,  jQuery and D3.js library to demonstrate the result to both business team and engineering team.</div>
+				<div class="skill cursor" id="spark">Spark</div>
+				<div class="skill cursor" id="aws">AWS</div>
+				<div class="skillDetail" id="awsDetail">When local computer performance is not enough for the projects,  I will switch to AWS. I did big data processing and analysis on <strong>Amazon EMR</strong> in several projects. Besides, for some projects using deep learning technique, I set up CUDA, cuDNN and TensorFlow environment on <strong>Amazon EC2</strong> instance, then trained models on AWS.</div>
+  			</div>
+  		</div>
+
+  		<!-- Content for projects page -->
+  		<div class="content" id="project0">
+            <div class="objective">
+            	<h2>Gentrification Detection</h2>
+            </div>
+        </div>
+
+        <div class="content" id="project1">
+            <div class="objective">
+                <h2>End-to-End Learning <br> for Story Comprehension Tests</h2>
+            </div>
+
+            <div class="container">
+            	<fieldset>
+            		<legend>Machine Comprehension</legend>
+            		<p>To understand the purpose of this project, let’s see the definition of machine comprehension first:</p><blockquote>A machine comprehends a passage of text if, for any question regarding that text	that can be answered correctly by a majority of native speakers, that machine can provide a string which those speakers would agree both answers that question, and does not contain information irrelevant to that question.</blockquote> <blockquote style="text-align: right">-- Towards the Machine Comprehension of Text: An Essay</blockquote>
+            		<p>This project is aimed at teaching machine to answer multi-choice reading comprehension questions.</p>
+            	</fieldset>
+            	<fieldset>
+            		<legend>Dataset Description</legend>
+            		<p>This project uses Who-did-What, a large scale person-centered cloze dataset with multiple choice questions. This dataset has over 200,000 problems constructed from the LDC English Gigaword newswire corpus. More details can be found <a href="https://arxiv.org/pdf/1608.05457.pdf">here</a>. </p>
+            	</fieldset>
+            	<fieldset>
+            		<legend>Data Preprocessing</legend>
+            		<p>Since the original Who-did-What dataset is in XML format, we parsed dataset and replaced each answer in the question sentence with ’@placeholder’. What’s more, we found all person names appeared in other choices of corresponding document and did anonymization process.<br><br>Here is one example of a document and question pair after data preprocessing: </p>
+
+            		<blockquote style="background-color: #e9ece5"><strong>Document:</strong>&nbsp; ivory coast s internationally recognised poll winner alassane ouattara has given rival @entity20 until midnight to quit , ouattara s prime minister @entity21 said on friday . if gbagbo quits before the start of the new year , he will have no worries , said soro . ouat- tara , recognised by the international commu- nity as winner of the november 28 presidential election , is being protected by un peacekeep- ers who on friday were staring down a threat by gbagbo supporters to storm a hotel he has made his temporary headquarters .<br><br><strong>Question:</strong>&nbsp; ivory coast faced a new year overshadowed by the threat of open conflict as supporters of the internationally recognised election winner alassane ouattara gave self proclaimed president @placeholder until midnight to quit .<br><br><strong>Answer:</strong>&nbsp; @entity20</blockquote>
+            	</fieldset>
+
+            	<div class="code-title cursor" id="code-title1" style="background-color: #e5eceb">Here is primary parts of code for data preprocessing.</div>
+            	<div class="code cursor" id="code1">
+            		<pre>from xml.etree import ElementTree as ET<br>from htmlentitydefs import name2codepoint<br>import os<br>import re<br><br>def clean_str(string):<br>  string = str(string.encode("utf8"))<br>  string = re.sub(r"[^A-Za-z0-9,.!?]", " ", string)<br>  string = re.sub(r",", " , ", string)<br>  string = re.sub(r"!", " ! ", string)<br>  string = re.sub(r"\.", " . ", string)<br>  string = re.sub(r"\s{2,}", " ", string)<br>  string = " ".join(string.split())<br>  return string.strip().lower()<br><br>def parse(file):<br>  parser = ET.XMLParser()<br>  parser.parser.UseForeignDTD(True)<br>  parser.entity.update((x, unichr(i)) for x, i in name2codepoint.iteritems())<br>  etree = ET.ElementTree()<br>  for filename in os.listdir(path):<br>    if filename == file:<br>      data = open(path + filename, 'r')<br>      root = etree.parse(data, parser=parser)<br>      break<br>  ind, entity_lists, plus, correct = 1, [], [], []<br>  for mc in root:<br>    entity_lists.append({})<br>    plus.append({})<br>    correct.append({})<br>    memory = None<br>    for child in mc:<br>      if child.tag == 'question':<br>        for grandchildren in child:<br>          if grandchildren.tag == 'blank':<br>             t = grandchildren.text<br>             t = clean_str(t)<br>             plus[-1][t] = ' @entity' + str(ind) + ' '<br>             ind += 1<br>             memory = plus[-1][t]<br>             break<br>      elif child.tag == 'choice':<br>        t = clean_str(child.text)<br>        if child.attrib['correct'] == 'true':<br>          correct[-1][t] = memory<br>        else:<br>          entity_lists[-1][t] = ' @entity' + str(ind) + ' '<br>          ind += 1</pre>
+				</div>
+
+				<fieldset>
+					<legend>Model</legend>
+					<p>Two different models are used, one is <strong>Recurrent Neural Network(RNN)</strong> model with attentive reader, the other is <strong>Dynamic Memory Network(DMN)</strong>.</p>
+				</fieldset>
+				<fieldset>
+					<legend>Recurrent Neural Network(RNN)</legend>
+					<p> &nbsp; &nbsp; For RNN model with attentive reader, we tried LSTM layers and GRU layers combine with mlp attention function and bilinear attention function. The final results showed that GRU layers with bilinear attention function performs best on both train and validation dataset, we would choose this model. <br><br> We then added n-gram to the model. Below is the curve of accuracy changes as epoch grows:</p>
+					<img style="text-align: center; margin: 0 auto" src="rnn.png" width="400px"> 
+					<p>We found that at the first few epochs, the validation accuracy of RNN models n-gram is higher than regular RNN models. However, in the end, the results of two models were almost the same.</p> 
+				</fieldset>
+				<fieldset>
+					<legend>Dynamic Memory Network(DMN)</legend>
+					<p>&nbsp; &nbsp; For Dynamic Memory Network(DMN) model, since the model is not as well-known as RNN, let’s see a brief introduction to model first: </p>
+					<blockquote>The model contains 4 parts: input module, question module, episodic memory module and answer module. The input module reads documents while the question module reads questions and convert both to vectors. The episodic memory module updates the memory vectors based on the correlation between sentence of document and question. Finally the answer module generates the result. Below is a schematic diagram about how Dynamic Memory Network(DMN) works: <br><br><img src="DMN.png" width="700px"> </blockquote>
+					<blockquote style="text-align: right"> -- Based on Ask Me Anything: Dynamic Memory Networks for Natural Language Processing</blockquote>
+					<p>The training process for this model is time consuming, because the model converges very slow.  In the end, we only finished 10 epochs, and the accuracy is  54.06%. Actually the result is not bad since this is a multiple-choice(num=6) question-answering problem. </p>
+				</fieldset>
+
+				<fieldset>
+					<legend>Error Analysis</legend>
+					<p>Due to the fact that Dynamic Memory Network(DMN) model was't well-trained enough, we used RNN model with attentive reader for error analysis. We first broke down the questions into several categories: </p>
+					<ul style="background-color: #e6e8f1">
+						<li>Exact Match: Sentence similar to the question can be found in the document.</li>
+						<li>Paraphrase: Question are expressed in a way using different words.</li>
+						<li>Multiple Sent: Clues for answering the question are in several different sentences. </li>
+						<li>Partial Clue: Only part of the clues for answering the question are directly shown in the document.</li>
+						<li>Hard : Questions that are even hard for  native speakers.</li>
+					</ul>
+					<p>For RNN model with attentive reader, we checked 100 document-question pairs. Among all 17 questions weren't correctly answered, there are 6 paraphrases, 3 exact matches, 5 partial clues, 1 hard or ambiguous example, and 2 multiple sentences. Actually, there may be some overlaps between the hard category and other categories.</p>
+				</fieldset>
+            </div>
+        </div>
+
+        <div class="content" id="project2">
+            <div class="objective">
+                <h2>Automated Q&amp;A System of Yahoo! Answers</h2>
+            </div>
+        </div>
+
+		<div class="footer">
+  			<p style="text-align: center">all work &#169; Jirou Xu 2015 - 2018</p>
+		</div>
+
+		<div class="visitor">
+  			<p>Totally 1000 visitors. &nbsp; &nbsp; Currently 1 visitors Online.</p>
+		</div>
+
+	</body>
+</html>
